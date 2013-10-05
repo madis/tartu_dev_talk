@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe 'Media on pages' do
-  it 'has video element' do
-    visit '/porno'
-    expect(page).to have_selector('video.source')
+  it 'has a page' do
+    visit '/'
+    expect(page.status_code).to be(200)
   end
 end
